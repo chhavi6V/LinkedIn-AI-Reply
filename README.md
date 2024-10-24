@@ -24,8 +24,8 @@ A Chrome extension built with React, TypeScript, and Tailwind CSS that assists u
 
 1. Clone the repository
 ```bash
-git clone https://github.com/[your-username]/linkedin-ai-reply
-cd linkedin-ai-reply
+git clone https://github.com/chhavi6V/LinkedIn-AI-Reply.git
+cd LinkedIn-AI-Reply
 
 ```
 
