@@ -4,7 +4,7 @@ A Chrome extension built with React, TypeScript, and Tailwind CSS that assists u
 
 ## Demo 🎥
 
-[Insert your demo video here]
+https://github.com/user-attachments/assets/52e832c2-b80a-49c5-8f82-c471a8a0b123
 
 ## Features ⭐
 
