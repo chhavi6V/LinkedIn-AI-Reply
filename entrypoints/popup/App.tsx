@@ -1,25 +1,38 @@
-import StartButton from "./StartButton";
+import React from 'react';
+import StartButton from './StartButton';
 
-function App() {
+const APP_CONTENT = {
+  TITLE: 'LinkedIn AI Reply',
+  DESCRIPTION: 'Experience a streamlined way to craft quick, smart replies for your LinkedIn messages, powered by AI.',
+  INSTRUCTION: 'Click on any message input field to start!',
+} as const;
+
+const App: React.FC = () => {
   return (
-    <>
-      <div className="Main-wrapper w-80 py-6 px-5 bg-light_gray text-center shadow-lg rounded-lg">
-        <h1 className="text-3xl text-center text-deep_sky_blue font-semibold mb-2">
-            LinkedIn AI Reply
+    <div className="w-[320px] p-4 bg-white">
+      <header className="mb-3">
+        <h1 className="text-xl font-bold text-deep_sky_blue">
+          {APP_CONTENT.TITLE}
         </h1>
-        {/* deep_sky_blue is a custom color from tailwind.config.js */}
-        <p className="text-lg text-dark_gray">
-          Experience a streamlined way to craft quick, smart replies for your
-          LinkedIn messages, powered by AI. This Chrome extension is designed to
-          simplify your communication.
-          <span className="block font-semibold my-2 text-warning">
-            (To begin, just click on the message input field!)
-          </span>
+      </header>
+
+      <main className="space-y-3">
+        <p className="text-sm text-dark_gray leading-relaxed">
+          {APP_CONTENT.DESCRIPTION}
         </p>
-        <StartButton />
-      </div>
-    </>
+        
+        <div className="bg-blue-50 p-2 rounded-md">
+          <p className="text-xs text-deep_sky_blue font-medium">
+            💡 {APP_CONTENT.INSTRUCTION}
+          </p>
+        </div>
+
+        <div className="pt-2">
+          <StartButton />
+        </div>
+      </main>
+    </div>
   );
-}
+};
 
 export default App;
